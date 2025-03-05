@@ -1,9 +1,13 @@
 package logger
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/petermattis/goid"
+)
 
 func TestLog(t *testing.T) {
-	InitLogger(LogModFile, "")
+	InitLogger(LogModConsole, "")
 
 	Error("err")
 	Info("info")
@@ -11,4 +15,7 @@ func TestLog(t *testing.T) {
 	SetTraceId(0, genTraceId())
 
 	Info("again")
+
+	SetTraceId(goid.Get(), "")
+	Info("set")
 }

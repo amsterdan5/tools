@@ -36,11 +36,10 @@ func SetTraceId(gid int64, traceId string) {
 	}
 
 	traceMap[gid] = traceId
-	return
 }
 
 func genTraceId() string {
-	return strings.ReplaceAll(uuid.New().String(), "-", "")
+	return strings.ReplaceAll(uuid.NewString(), "-", "")
 }
 
 func DelTraceId() {

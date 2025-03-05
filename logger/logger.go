@@ -32,7 +32,7 @@ func InitLogger(mod LogMod, logPath string) {
 }
 
 func getEncoder() zapcore.Encoder {
-	encoder := zapcore.EncoderConfig{
+	cfg := zapcore.EncoderConfig{
 		TimeKey:        "ts",
 		LevelKey:       "level",
 		NameKey:        "myLogger",
@@ -47,7 +47,7 @@ func getEncoder() zapcore.Encoder {
 		EncodeCaller:   zapcore.ShortCallerEncoder,
 		EncodeName:     zapcore.FullNameEncoder,
 	}
-	return zapcore.NewConsoleEncoder(encoder)
+	return zapcore.NewConsoleEncoder(cfg)
 }
 
 func getWriter(logPath string) zapcore.WriteSyncer {

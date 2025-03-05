@@ -2,7 +2,7 @@ package logger
 
 type LogMod uint32
 
-var defaultLogPath = "/home/log/log.log"
+var defaultLogPath = "/home/yoo/log.log"
 
 const (
 	LogModFile    = iota + 1 // 文件
