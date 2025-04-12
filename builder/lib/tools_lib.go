@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/amsterdan/tools/logger"
+	"github.com/amsterdan5/tools/logger"
 )
 
 type Func func()

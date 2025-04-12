@@ -1,7 +1,7 @@
 package main
 
 import (
-	tools_lib "github.com/amsterdan/tools/builder/lib"
+	tools_lib "github.com/amsterdan5/tools/builder/lib"
 )
 
 func wrapperAdd() {

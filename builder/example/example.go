@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	. "github.com/amsterdan/tools/builder/lib"
+	. "github.com/amsterdan5/tools/builder/lib"
 )
 
 // usage: -a "left op" -b right op""

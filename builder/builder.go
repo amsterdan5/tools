@@ -13,7 +13,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/amsterdan/tools/logger"
+	"github.com/amsterdan5/tools/logger"
 )
 
 func showUsage() {
@@ -107,7 +107,7 @@ func main() {
 	buf := ""
 	imp := `package main
 import (
-	tools_lib "github.com/amsterdan/tools/builder/lib"
+	tools_lib "github.com/amsterdan5/tools/builder/lib"
 )
 `
 	buf += imp

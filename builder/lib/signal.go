@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/amsterdan/tools/logger"
+	"github.com/amsterdan5/tools/logger"
 )
 
 func regExitSignals() {

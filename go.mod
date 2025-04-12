@@ -1,4 +1,4 @@
-module github.com/amsterdan/tools
+module github.com/amsterdan5/tools
 
 go 1.20
 
